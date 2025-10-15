@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emanuella Modas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="circle">EM</div>
+      <div>
+        <h1>Emanuella <span>Modas</span></h1>
+        <p>Moda com elegância</p>
+      </div>
+    </div>
+    <input id="search" type="text" placeholder="Buscar produtos..." />
+    <button id="cart-btn">🛍️ Carrinho (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h2>Coleção Primavera • 2025</h2>
+      <p>Peças elegantes com materiais de alta qualidade.</p>
+    </section>
+
+    <section class="filters">
+      <select id="category">
+        <option value="Todos">Todos</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Acessórios">Acessórios</option>
+      </select>
+      <input id="minPrice" placeholder="Min R$" />
+      <input id="maxPrice" placeholder="Max R$" />
+      <button id="clearFilters">Limpar</button>
+    </section>
+
+    <section id="product-list" class="products"></section>
+  </main>
+
+  <footer>
+    <p>© 2025 Emanuella Modas — Moda, estilo e confiança.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
